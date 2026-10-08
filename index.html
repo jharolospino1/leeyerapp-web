@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeeyerApp: la app para estudiar Derecho | Descargar para Android</title>
+    <meta name="description" content="Estudia Derecho desde tu celular: materias, casos prácticos, preguntas y simulacros en un solo lugar. Descarga LeeyerApp para Android.">
+    <link rel="canonical" href="https://jharolospino1.github.io/leeyerapp-web/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0b0914">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <!-- Redes sociales / vista previa al compartir -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LeeyerApp">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:title" content="LeeyerApp: la app para estudiar Derecho">
+    <meta property="og:description" content="Materias, casos prácticos, preguntas y simulacros en un solo lugar. Descárgala para Android.">
+    <meta property="og:url" content="https://jharolospino1.github.io/leeyerapp-web/">
+    <meta property="og:image" content="https://jharolospino1.github.io/leeyerapp-web/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo de LeeyerApp: libro abierto con balanza de la justicia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LeeyerApp: la app para estudiar Derecho">
+    <meta name="twitter:description" content="Materias, casos prácticos, preguntas y simulacros en un solo lugar. Descárgala para Android.">
+    <meta name="twitter:image" content="https://jharolospino1.github.io/leeyerapp-web/og-image.jpg">
+
+    <!-- Íconos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preload" href="inter-400.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="inter-700.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Datos estructurados para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "LeeyerApp",
+      "description": "Aplicación educativa para estudiantes y egresados de Derecho: materias, casos prácticos, preguntas y simulacros.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "ANDROID",
+      "inLanguage": "es",
+      "url": "https://jharolospino1.github.io/leeyerapp-web/",
+      "image": "https://jharolospino1.github.io/leeyerapp-web/logo-512.png",
+      "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk"
+    }
+    </script>
+</head>
+<body class="font-sans antialiased selection:bg-brand-purple selection:text-white">
+
+    <!-- Íconos -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+        <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+        <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+        <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+        <symbol id="i-clip" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+        <symbol id="i-lib" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol>
+        <symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></symbol>
+    </svg>
+
+    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:bg-brand-purple focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Saltar al contenido</a>
+
+    <!-- Luces de fondo -->
+    <div class="absolute inset-x-0 top-0 h-[1400px] overflow-hidden pointer-events-none" aria-hidden="true">
+        <div class="ambient-glow top-0 left-0"></div>
+        <div class="ambient-glow top-1/4 right-0" style="background: radial-gradient(circle, rgba(192, 132, 252, 0.12) 0%, rgba(11, 9, 20, 0) 70%);"></div>
+    </div>
+
+    <!-- Navegación -->
+    <header>
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar" aria-label="Principal">
+        <div class="absolute inset-0 bg-brand-bg/85 backdrop-blur-md border-b border-brand-border"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+            <div class="flex items-center justify-between h-20">
+                <a href="#inicio" class="flex items-center gap-3 group" aria-label="LeeyerApp, ir al inicio">
+                    <img src="logo-192.png" width="40" height="40" alt="" class="h-10 w-10 object-cover rounded-xl shadow-[0_0_15px_rgba(139,92,246,0.5)] group-hover:shadow-[0_0_25px_rgba(139,92,246,0.8)] transition-all">
+                    <span class="font-bold text-2xl tracking-tight text-white">Leeyer<span class="text-brand-purpleLight">App</span></span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Inicio</a>
+                    <a href="#funciones" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Funciones</a>
+                    <a href="#la-aplicacion" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">La aplicación</a>
+                    <a href="#cursos" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Cursos</a>
+                    <a href="#instalar" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Cómo instalar</a>
+                </div>
+
+                <div class="hidden md:flex items-center">
+                    <a href="#descarga" class="bg-gradient-primary text-white px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity flex items-center gap-2 glow-button">
+                        <svg class="ic w-5 h-5" aria-hidden="true"><use href="#i-download"/></svg>
+                        Descargar LeeyerApp
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-300 hover:text-white p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="ic w-8 h-8" id="menu-open" aria-hidden="true"><use href="#i-menu"/></svg>
+                        <svg class="ic w-8 h-8 hidden" id="menu-close" aria-hidden="true"><use href="#i-x"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-bg/95 backdrop-blur-lg border-b border-brand-border absolute w-full left-0 top-20 shadow-2xl">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#inicio" class="block px-3 py-2 text-gray-300 hover:bg-brand-card hover:text-white rounded-lg transition-colors mobile-link">Inicio</a>
+                <a href="#funciones" class="block px-3 py-2 text-gray-300 hover:bg-brand-card hover:text-white rounded-lg transition-colors mobile-link">Funciones</a>
+                <a href="#la-aplicacion" class="block px-3 py-2 text-gray-300 hover:bg-brand-card hover:text-white rounded-lg transition-colors mobile-link">La aplicación</a>
+                <a href="#cursos" class="block px-3 py-2 text-gray-300 hover:bg-brand-card hover:text-white rounded-lg transition-colors mobile-link">Cursos</a>
+                <a href="#instalar" class="block px-3 py-2 text-gray-300 hover:bg-brand-card hover:text-white rounded-lg transition-colors mobile-link">Cómo instalar</a>
+                <div class="pt-2">
+                    <a href="#descarga" class="w-full block text-center bg-gradient-primary text-white py-3 rounded-xl font-medium text-sm glow-button mobile-link">Descargar LeeyerApp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main id="contenido">
+
+    <!-- Inicio -->
+    <section id="inicio" class="pt-32 pb-24 lg:pt-44 lg:pb-32 px-6 lg:px-8 max-w-7xl mx-auto relative">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+            <div class="reveal">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-semibold tracking-wider mb-6 uppercase">
+                    <svg class="ic w-4 h-4" aria-hidden="true"><use href="#i-cap"/></svg>
+                    Aplicación educativa para estudiantes de Derecho
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+                    Tu camino al éxito en <span class="text-gradient">Derecho</span>
+                </h1>
+
+                <p class="text-lg lg:text-xl text-gray-400 mb-10 max-w-lg leading-relaxed">
+                    Estudia, practica y mejora tus conocimientos jurídicos desde un solo lugar.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk" rel="noopener" class="bg-gradient-primary text-white px-8 py-4 rounded-xl font-bold text-sm text-center hover:opacity-90 transition-all glow-button flex items-center justify-center gap-2">
+                        <svg class="ic w-5 h-5" aria-hidden="true"><use href="#i-download"/></svg>
+                        DESCARGAR PARA ANDROID
+                    </a>
+                    <a href="#la-aplicacion" class="glass-card text-white px-8 py-4 rounded-xl font-bold text-sm text-center flex items-center justify-center gap-2 group">
+                        <svg class="ic w-5 h-5 text-brand-purpleLight group-hover:scale-110 transition-transform" aria-hidden="true"><use href="#i-play"/></svg>
+                        CONOCER LA APLICACIÓN
+                    </a>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-500">
+                    <div class="flex items-center gap-1.5">
+                        <svg class="ic w-4 h-4 text-brand-purpleLight" aria-hidden="true"><use href="#i-phone"/></svg>
+                        <span class="text-gray-400">Compatible con Android</span>
+                    </div>
+                    <div class="w-1.5 h-1.5 bg-gray-700 rounded-full" aria-hidden="true"></div>
+                    <div>Versión <span class="text-brand-purpleLight font-medium js-ver">1.0.0</span></div>
+                    <div class="w-1.5 h-1.5 bg-gray-700 rounded-full" aria-hidden="true"></div>
+                    <a href="#instalar" class="text-gray-400 hover:text-white underline underline-offset-4 decoration-brand-border">¿Cómo se instala?</a>
+                </div>
+            </div>
+
+            <div class="flex justify-center lg:justify-end reveal relative z-10">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-brand-purple/20 blur-[90px] rounded-full z-0 pointer-events-none" aria-hidden="true"></div>
+                <div class="relative z-10 w-full max-w-[280px] sm:max-w-[300px] animate-float">
+                    <video id="hero-video" width="576" height="1024"
+                           class="w-full h-auto aspect-[9/16] rounded-[2rem] shadow-[0_20px_60px_rgba(138,43,226,0.35)] border border-brand-border bg-brand-card object-cover"
+                           src="leeyerapp-demo.mp4" poster="leeyerapp-poster.jpg"
+                           autoplay muted loop playsinline preload="auto"
+                           aria-label="Demostración de la aplicación LeeyerApp"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funciones -->
+    <section id="funciones" class="py-24 relative z-10 border-t border-brand-border/50 bg-[#0e0b1c]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <p class="text-brand-purpleLight text-sm font-bold tracking-widest uppercase mb-3">Funciones principales</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Todo tu estudio de Derecho en un solo lugar</h2>
+                <p class="text-gray-400 text-lg">LeeyerApp reúne herramientas completas para que organices tu estudio, practiques con casos y hagas seguimiento de tu progreso.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="glass-card rounded-2xl p-8 reveal">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-book"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Materias</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Organiza tu aprendizaje por diferentes áreas del Derecho.</p>
+                </article>
+
+                <article class="glass-card rounded-2xl p-8 reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-scale"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Casos prácticos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Analiza situaciones jurídicas y desarrolla tu razonamiento.</p>
+                </article>
+
+                <article class="glass-card rounded-2xl p-8 reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-help"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preguntas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Pon a prueba tus conocimientos.</p>
+                </article>
+
+                <article class="glass-card rounded-2xl p-8 reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-clip"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Simulacros</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Practica para tus evaluaciones.</p>
+                </article>
+
+                <article class="glass-card rounded-2xl p-8 reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-lib"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Biblioteca</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Consulta libros y material académico.</p>
+                </article>
+
+                <article class="glass-card rounded-2xl p-8 reveal" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purpleLight mb-6 border border-brand-purple/20"><svg class="ic w-7 h-7" aria-hidden="true"><use href="#i-chart"/></svg></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Progreso</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Mide tu avance y descubre qué temas necesitas reforzar.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- La aplicación -->
+    <section id="la-aplicacion" class="py-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[700px] h-[700px] bg-brand-purple/5 blur-[130px] rounded-full pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 mb-12 reveal">
+            <p class="text-brand-purpleLight text-sm font-bold tracking-widest uppercase mb-3">Presentación de la app</p>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white max-w-xl">Conoce LeeyerApp</h2>
+                <p class="text-gray-400 text-sm max-w-md">Una interfaz moderna, intuitiva y diseñada para que aproveches al máximo tu tiempo de estudio jurídico.</p>
+            </div>
+        </div>
+
+        <!-- Galería estilo tienda de apps: video + capturas -->
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 reveal relative">
+            <button id="gal-prev" type="button" aria-label="Anterior" class="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-brand-bg/90 border border-brand-border text-white items-center justify-center hover:bg-brand-purple transition-colors">
+                <svg class="ic w-6 h-6" aria-hidden="true"><use href="#i-left"/></svg>
+            </button>
+            <button id="gal-next" type="button" aria-label="Siguiente" class="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-brand-bg/90 border border-brand-border text-white items-center justify-center hover:bg-brand-purple transition-colors">
+                <svg class="ic w-6 h-6" aria-hidden="true"><use href="#i-right"/></svg>
+            </button>
+
+            <div id="gallery" class="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 scroll-smooth [&>:first-child]:ml-auto [&>:last-child]:mr-auto" role="region" aria-label="Capturas y video de la aplicación" tabindex="0">
+                <div class="snap-center shrink-0 h-[440px] sm:h-[520px] lg:h-[620px]">
+                    <video width="576" height="1024" class="h-full w-auto aspect-[9/16] object-cover rounded-2xl border border-brand-border bg-brand-card shadow-[0_15px_40px_rgba(138,43,226,0.25)]"
+                           src="leeyerapp-demo.mp4" poster="leeyerapp-poster.jpg" controls playsinline preload="none"
+                           aria-label="Video de presentación de LeeyerApp"></video>
+                </div>
+                <button type="button" data-lightbox="0" class="gal-shot snap-center shrink-0 h-[440px] sm:h-[520px] lg:h-[620px] aspect-[3/8] rounded-2xl overflow-hidden border border-brand-border shadow-[0_15px_40px_rgba(138,43,226,0.25)] hover:border-brand-purple hover:-translate-y-1 transition-all" aria-label="Ampliar captura: inicio">
+                    <img src="screen-1-inicio.jpg" width="384" height="1024" alt="LeeyerApp: pantalla de inicio con tus materias y tu progreso general" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                </button>
+                <button type="button" data-lightbox="1" class="gal-shot snap-center shrink-0 h-[440px] sm:h-[520px] lg:h-[620px] aspect-[3/8] rounded-2xl overflow-hidden border border-brand-border shadow-[0_15px_40px_rgba(138,43,226,0.25)] hover:border-brand-purple hover:-translate-y-1 transition-all" aria-label="Ampliar captura: materias">
+                    <img src="screen-2-materias.jpg" width="384" height="1024" alt="LeeyerApp: lista de materias con buscador y porcentaje de avance" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                </button>
+                <button type="button" data-lightbox="2" class="gal-shot snap-center shrink-0 h-[440px] sm:h-[520px] lg:h-[620px] aspect-[3/8] rounded-2xl overflow-hidden border border-brand-border shadow-[0_15px_40px_rgba(138,43,226,0.25)] hover:border-brand-purple hover:-translate-y-1 transition-all" aria-label="Ampliar captura: estudio">
+                    <img src="screen-3-estudio.jpg" width="384" height="1024" alt="LeeyerApp: pantalla de estudio de un tema con teoría, conceptos clave y material de apoyo" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                </button>
+                <button type="button" data-lightbox="3" class="gal-shot snap-center shrink-0 h-[440px] sm:h-[520px] lg:h-[620px] aspect-[3/8] rounded-2xl overflow-hidden border border-brand-border shadow-[0_15px_40px_rgba(138,43,226,0.25)] hover:border-brand-purple hover:-translate-y-1 transition-all" aria-label="Ampliar captura: cursos y simulacros">
+                    <img src="screen-4-cursos.jpg" width="384" height="1024" alt="LeeyerApp: curso con código de acceso, actividades y último simulacro" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                </button>
+            </div>
+            <p class="text-center text-gray-500 text-xs mt-4">Desliza para ver más · Toca una captura para ampliarla</p>
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="py-24 relative bg-[#0e0b1c] border-y border-brand-border/50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <div class="order-2 lg:order-1 flex justify-center reveal relative">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-brand-purple/20 blur-[80px] rounded-full z-0 pointer-events-none" aria-hidden="true"></div>
+
+                    <div class="w-full max-w-sm glass-card rounded-3xl p-6 relative z-10 shadow-2xl" role="img" aria-label="Ejemplo de un curso en LeeyerApp: Derecho Penal, con código de acceso y secciones de materias, trabajos, lecturas, preguntas y exámenes">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-brand-border">
+                            <span class="text-xs font-bold text-brand-purpleLight uppercase tracking-wider">Aula virtual</span>
+                            <span class="bg-brand-purple/20 text-brand-purpleLight text-xs px-2.5 py-1 rounded-full font-mono">Curso activo</span>
+                        </div>
+
+                        <p class="text-2xl font-bold text-white mb-2">Derecho Penal</p>
+                        <p class="text-xs text-gray-400 mb-6">Código del curso:</p>
+
+                        <div class="bg-brand-bg border border-brand-border rounded-2xl p-4 text-center mb-6">
+                            <span class="text-3xl font-mono font-bold tracking-widest text-gradient">573298</span>
+                        </div>
+
+                        <div class="space-y-2.5">
+                            <div class="bg-brand-card border border-brand-border rounded-xl p-3 flex items-center justify-between"><span class="text-xs font-medium text-white">Materias</span><svg class="ic w-3.5 h-3.5 text-gray-400" aria-hidden="true"><use href="#i-right"/></svg></div>
+                            <div class="bg-brand-card border border-brand-border rounded-xl p-3 flex items-center justify-between"><span class="text-xs font-medium text-white">Trabajos</span><svg class="ic w-3.5 h-3.5 text-gray-400" aria-hidden="true"><use href="#i-right"/></svg></div>
+                            <div class="bg-brand-card border border-brand-border rounded-xl p-3 flex items-center justify-between"><span class="text-xs font-medium text-white">Lecturas</span><svg class="ic w-3.5 h-3.5 text-gray-400" aria-hidden="true"><use href="#i-right"/></svg></div>
+                            <div class="bg-brand-card border border-brand-border rounded-xl p-3 flex items-center justify-between"><span class="text-xs font-medium text-white">Preguntas</span><svg class="ic w-3.5 h-3.5 text-gray-400" aria-hidden="true"><use href="#i-right"/></svg></div>
+                            <div class="bg-brand-card border border-brand-border rounded-xl p-3 flex items-center justify-between"><span class="text-xs font-medium text-white">Exámenes</span><svg class="ic w-3.5 h-3.5 text-gray-400" aria-hidden="true"><use href="#i-right"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 reveal">
+                    <p class="text-brand-purpleLight text-sm font-bold tracking-widest uppercase mb-3">Cursos</p>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Aprende también en tus cursos</h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">Únete a cursos mediante un código de acceso y encuentra las actividades asignadas por tu profesor.</p>
+
+                    <div class="glass-card rounded-2xl p-6 border-l-4 border-l-brand-purple">
+                        <p class="text-sm text-gray-300 leading-relaxed">Los profesores y administradores pueden crear cursos y asignar contenido directamente a sus estudiantes, facilitando el seguimiento académico grupal.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 reveal">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-12 text-center">Diseñada para estudiar Derecho de una manera diferente</h2>
+
+            <ul class="grid sm:grid-cols-2 gap-x-12 gap-y-5">
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Estudia desde cualquier lugar</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Organiza tus materias</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Practica con preguntas</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Analiza casos</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Realiza simulacros</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Controla tu progreso</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Guarda tus favoritos</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Crea tus notas</span></li>
+                <li class="flex items-center gap-4 group"><span class="w-6 h-6 rounded-full bg-brand-purple/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple transition-colors text-brand-purpleLight group-hover:text-white"><svg class="ic w-3.5 h-3.5" style="stroke-width:3" aria-hidden="true"><use href="#i-check"/></svg></span><span class="text-gray-300 text-base">Únete a cursos</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Descarga -->
+    <section id="descarga" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b0914] via-[#150f2e] to-[#0b0914] z-0" aria-hidden="true"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-brand-purple/30 blur-[150px] rounded-full z-0 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10 text-center reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Descarga LeeyerApp</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Lleva tu estudio jurídico contigo a donde vayas.</p>
+
+            <a href="https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-gradient-primary text-white px-8 sm:px-10 py-5 rounded-2xl font-bold text-lg hover:opacity-90 transition-all glow-button hover:scale-105 shadow-[0_0_40px_rgba(139,92,246,0.6)]">
+                <svg class="ic w-6 h-6" style="stroke-width:2.5" aria-hidden="true"><use href="#i-download"/></svg>
+                DESCARGAR APK
+            </a>
+
+            <div class="mt-8 flex justify-center items-center">
+                <div class="glass-card rounded-xl px-6 py-3 flex items-center gap-4 text-left">
+                    <svg class="ic w-7 h-7 text-brand-purpleLight" aria-hidden="true"><use href="#i-phone"/></svg>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Android</p>
+                        <p class="text-gray-400 text-xs">Versión <span class="js-ver">1.0.0</span> · <span class="js-size">3.5 MB</span><span class="js-date-wrap hidden"> · <span class="js-date"></span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-6 text-sm text-gray-400 max-w-md mx-auto">¿Primera vez instalando un APK? Mira <a href="#instalar" class="text-brand-purpleLight underline underline-offset-4">cómo instalarla paso a paso</a>. Por ahora solo está disponible para Android.</p>
+        </div>
+    </section>
+
+    <!-- Cómo instalar -->
+    <section id="instalar" class="py-24 relative bg-[#0e0b1c] border-t border-brand-border/50">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                <p class="text-brand-purpleLight text-sm font-bold tracking-widest uppercase mb-3">Guía de instalación</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Cómo instalar LeeyerApp en tu celular</h2>
+                <p class="text-gray-400">Tarda menos de un minuto. Necesitas un celular con Android.</p>
+            </div>
+
+            <ol class="grid sm:grid-cols-2 gap-6">
+                <li class="glass-card rounded-2xl p-6 reveal flex gap-4">
+                    <span class="w-9 h-9 rounded-full bg-gradient-primary flex items-center justify-center font-bold shrink-0">1</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Descarga el archivo</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Toca «Descargar APK». Si el navegador muestra una advertencia sobre el archivo, confirma que quieres conservarlo.</p>
+                    </div>
+                </li>
+                <li class="glass-card rounded-2xl p-6 reveal flex gap-4" style="transition-delay: 100ms;">
+                    <span class="w-9 h-9 rounded-full bg-gradient-primary flex items-center justify-center font-bold shrink-0">2</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Ábrelo</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Cuando termine, toca «Abrir» en la notificación o búscalo en la carpeta «Descargas» de tu celular.</p>
+                    </div>
+                </li>
+                <li class="glass-card rounded-2xl p-6 reveal flex gap-4" style="transition-delay: 200ms;">
+                    <span class="w-9 h-9 rounded-full bg-gradient-primary flex items-center justify-center font-bold shrink-0">3</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Permite la instalación</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Android te pedirá permiso para instalar apps desde esta fuente (por ejemplo, desde Chrome). Actívalo en «Ajustes» y regresa.</p>
+                    </div>
+                </li>
+                <li class="glass-card rounded-2xl p-6 reveal flex gap-4" style="transition-delay: 300ms;">
+                    <span class="w-9 h-9 rounded-full bg-gradient-primary flex items-center justify-center font-bold shrink-0">4</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Instala y abre</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Toca «Instalar». Si aparece un aviso de Play Protect, toca «Más detalles» y luego «Instalar de todas formas».</p>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="mt-8 glass-card rounded-2xl p-6 border-l-4 border-l-brand-purple reveal flex gap-4">
+                <svg class="ic w-6 h-6 text-brand-purpleLight mt-0.5" aria-hidden="true"><use href="#i-shield"/></svg>
+                <p class="text-sm text-gray-300 leading-relaxed">Descarga LeeyerApp solo desde esta página para asegurarte de instalar la versión oficial. El archivo se publica ya firmado.</p>
+            </div>
+
+            <div class="mt-16 reveal">
+                <h2 class="text-2xl font-bold text-white mb-6 text-center">Preguntas frecuentes</h2>
+                <div class="space-y-3 max-w-3xl mx-auto">
+                    <details class="glass-card rounded-xl p-5">
+                        <summary class="flex items-center justify-between gap-4 font-semibold text-white">¿Funciona en iPhone?<svg class="ic w-4 h-4 chev transition-transform text-brand-purpleLight" aria-hidden="true"><use href="#i-right"/></svg></summary>
+                        <p class="mt-3 text-sm text-gray-400 leading-relaxed">Por ahora LeeyerApp está disponible solo para Android.</p>
+                    </details>
+                    <details class="glass-card rounded-xl p-5">
+                        <summary class="flex items-center justify-between gap-4 font-semibold text-white">¿Por qué no está en Play Store?<svg class="ic w-4 h-4 chev transition-transform text-brand-purpleLight" aria-hidden="true"><use href="#i-right"/></svg></summary>
+                        <p class="mt-3 text-sm text-gray-400 leading-relaxed">Por ahora la aplicación se distribuye directamente desde esta página. Por eso Android te pide confirmar la instalación.</p>
+                    </details>
+                    <details class="glass-card rounded-xl p-5">
+                        <summary class="flex items-center justify-between gap-4 font-semibold text-white">¿Necesito internet?<svg class="ic w-4 h-4 chev transition-transform text-brand-purpleLight" aria-hidden="true"><use href="#i-right"/></svg></summary>
+                        <p class="mt-3 text-sm text-gray-400 leading-relaxed">Necesitas conexión a internet para iniciar sesión y sincronizar tu progreso.</p>
+                    </details>
+                    <details class="glass-card rounded-xl p-5">
+                        <summary class="flex items-center justify-between gap-4 font-semibold text-white">¿Cómo actualizo la app?<svg class="ic w-4 h-4 chev transition-transform text-brand-purpleLight" aria-hidden="true"><use href="#i-right"/></svg></summary>
+                        <p class="mt-3 text-sm text-gray-400 leading-relaxed">Cuando haya una versión nueva, vuelve a esta página, descarga el APK más reciente e instálalo encima de la versión anterior.</p>
+                    </details>
+                    <details class="glass-card rounded-xl p-5">
+                        <summary class="flex items-center justify-between gap-4 font-semibold text-white">¿Qué datos usa la app?<svg class="ic w-4 h-4 chev transition-transform text-brand-purpleLight" aria-hidden="true"><use href="#i-right"/></svg></summary>
+                        <p class="mt-3 text-sm text-gray-400 leading-relaxed">Lo explicamos en la <a href="privacidad.html" class="text-brand-purpleLight underline underline-offset-4">política de privacidad</a>.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Visor ampliado de capturas -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Captura ampliada">
+        <button id="lb-close" type="button" aria-label="Cerrar" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brand-purple transition-colors"><svg class="ic w-5 h-5" aria-hidden="true"><use href="#i-x"/></svg></button>
+        <button id="lb-prev" type="button" aria-label="Anterior" class="absolute left-3 md:left-8 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brand-purple transition-colors"><svg class="ic w-5 h-5" aria-hidden="true"><use href="#i-left"/></svg></button>
+        <img id="lb-img" src="" alt="" class="max-h-[88vh] max-w-[88vw] rounded-2xl shadow-[0_0_60px_rgba(139,92,246,0.4)]">
+        <button id="lb-next" type="button" aria-label="Siguiente" class="absolute right-3 md:right-8 w-11 h-11 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-brand-purple transition-colors"><svg class="ic w-5 h-5" aria-hidden="true"><use href="#i-right"/></svg></button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-[#05040a] border-t border-brand-border py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-8">
+                <div class="md:col-span-6">
+                    <a href="#inicio" class="flex items-center gap-3 mb-4 inline-flex" aria-label="LeeyerApp, ir al inicio">
+                        <img src="logo-192.png" width="36" height="36" alt="" loading="lazy" class="h-9 w-9 object-cover rounded-xl shadow-[0_0_10px_rgba(139,92,246,0.4)]">
+                        <span class="font-bold text-2xl tracking-tight text-white">Leeyer<span class="text-brand-purpleLight">App</span></span>
+                    </a>
+                    <p class="text-gray-400 text-sm max-w-sm">«Tu camino al éxito en Derecho»</p>
+                </div>
+
+                <nav class="md:col-span-3" aria-label="Navegación del pie de página">
+                    <h2 class="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Navegación</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Inicio</a></li>
+                        <li><a href="#funciones" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Funciones</a></li>
+                        <li><a href="#la-aplicacion" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">La aplicación</a></li>
+                        <li><a href="#cursos" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Cursos</a></li>
+                        <li><a href="#descarga" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Descarga</a></li>
+                        <li><a href="#instalar" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Cómo instalar</a></li>
+                    </ul>
+                </nav>
+
+                <div class="md:col-span-3">
+                    <h2 class="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Legal</h2>
+                    <ul class="space-y-2">
+                        <li><a href="privacidad.html" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Política de privacidad</a></li>
+                        <li><a href="terminos.html" class="text-gray-400 hover:text-brand-purpleLight text-sm transition-colors">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brand-border pt-8">
+                <p class="text-gray-500 text-xs">© 2026 LeeyerApp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var $ = function (id) { return document.getElementById(id); };
+
+            // Menú móvil
+            var btn = $('mobile-menu-btn'), menu = $('mobile-menu');
+            function setMenu(open) {
+                menu.classList.toggle('hidden', !open);
+                $('menu-open').classList.toggle('hidden', open);
+                $('menu-close').classList.toggle('hidden', !open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+            }
+            btn.addEventListener('click', function () { setMenu(menu.classList.contains('hidden')); });
+            document.querySelectorAll('.mobile-link').forEach(function (l) { l.addEventListener('click', function () { setMenu(false); }); });
+
+            // Sombra de la barra al hacer scroll
+            var navbar = $('navbar');
+            window.addEventListener('scroll', function () { navbar.classList.toggle('shadow-xl', window.scrollY > 40); }, { passive: true });
+
+            // Aparición suave al hacer scroll
+            var els = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('active'); io.unobserve(e.target); } });
+                }, { threshold: 0.1 });
+                els.forEach(function (el) { io.observe(el); });
+            } else {
+                els.forEach(function (el) { el.classList.add('active'); });
+            }
+
+            // Video principal
+            var hv = $('hero-video');
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (hv) {
+                hv.muted = true;
+                if (reduce) { hv.pause(); hv.removeAttribute('autoplay'); hv.setAttribute('controls', ''); }
+                else { var p = hv.play(); if (p && p.catch) p.catch(function () {}); }
+            }
+
+            // Galería: flechas
+            var gal = $('gallery');
+            function step() { return Math.min(gal.clientWidth * 0.8, 600); }
+            $('gal-prev').addEventListener('click', function () { gal.scrollBy({ left: -step(), behavior: 'smooth' }); });
+            $('gal-next').addEventListener('click', function () { gal.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+            // Visor ampliado
+            var shots = Array.prototype.slice.call(document.querySelectorAll('.gal-shot img'));
+            var lb = $('lightbox'), lbImg = $('lb-img'), cur = 0, opener = null;
+            function show(i) { cur = (i + shots.length) % shots.length; lbImg.src = shots[cur].src; lbImg.alt = shots[cur].alt; }
+            function openLb(i, from) { opener = from; show(i); lb.classList.remove('hidden'); lb.classList.add('flex'); document.body.style.overflow = 'hidden'; $('lb-close').focus(); }
+            function closeLb() { lb.classList.add('hidden'); lb.classList.remove('flex'); document.body.style.overflow = ''; if (opener) opener.focus(); }
+            document.querySelectorAll('.gal-shot').forEach(function (b) { b.addEventListener('click', function () { openLb(+b.dataset.lightbox, b); }); });
+            $('lb-close').addEventListener('click', closeLb);
+            $('lb-prev').addEventListener('click', function () { show(cur - 1); });
+            $('lb-next').addEventListener('click', function () { show(cur + 1); });
+            lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+            document.addEventListener('keydown', function (e) {
+                if (lb.classList.contains('hidden')) return;
+                if (e.key === 'Escape') closeLb();
+                if (e.key === 'ArrowLeft') show(cur - 1);
+                if (e.key === 'ArrowRight') show(cur + 1);
+            });
+
+            // Versión, tamaño y fecha reales de la última publicación
+            function setAll(sel, txt) { document.querySelectorAll(sel).forEach(function (n) { n.textContent = txt; }); }
+            if (window.fetch) {
+                fetch('https://api.github.com/repos/jharolospino1/leeyerapp/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+                    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+                    .then(function (d) {
+                        var v = ((d.name || '') + ' ' + (d.tag_name || '')).match(/\d+(\.\d+)+/);
+                        if (v) setAll('.js-ver', v[0]);
+                        var a = (d.assets || []).filter(function (x) { return x.name === 'LeeyerApp.apk'; })[0];
+                        if (a && a.size) setAll('.js-size', (a.size / 1048576).toFixed(1).replace('.', ',') + ' MB');
+                        if (d.published_at) {
+                            setAll('.js-date', new Date(d.published_at).toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' }));
+                            document.querySelectorAll('.js-date-wrap').forEach(function (n) { n.classList.remove('hidden'); });
+                        }
+                    })
+                    .catch(function () {});
+            }
+        });
+    </script>
+</body>
+</html>
