@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "minVersion": "1.0.0",
+  "mandatory": false,
+  "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
+  "title": "¡Nueva actualización disponible!",
+  "message": "Hemos mejorado la app con nuevas funciones, corrección de errores y un mejor rendimiento para ti.",
+  "notesTitle": "¿Qué incluye esta actualización?",
+  "notes": [
+    "Mejoras en el rendimiento",
+    "Corrección de errores",
+    "Nuevas funcionalidades"
+  ],
+  "publishedAt": "2026-10-10"
+}
