@@ -1,15 +1,9 @@
 {
-  "version": "2.1.0",
-  "minVersion": "2.1.0",
+  "version": "1.2.1",
   "mandatory": false,
-  "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
-  "title": "¡Nueva actualización disponible!",
-  "message": "Hemos mejorado la app con nuevas funciones, corrección de errores y un mejor rendimiento para ti.",
-  "notesTitle": "¿Qué incluye esta actualización?",
-  "notes": [
-    "Mejoras en el rendimiento",
-    "Corrección de errores",
-    "Nuevas funcionalidades"
-  ],
-  "publishedAt": "2026-10-10"
+  "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk",
+  "title": "¡Nueva versión disponible!",
+  "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
+  "notesTitle": "Novedades",
+  "notes": ["LeeyerIA: tu asistente de Derecho colombiano", "Nueva pantalla de Configuración", "Notificaciones y recordatorios de estudio", "Verificación en dos pasos", "Avisos push aunque la app esté cerrada"]
 }
