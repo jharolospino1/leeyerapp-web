@@ -1,7 +1,7 @@
 {
   "version": "1.3.0",
   "mandatory": false,
-  "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk",
+  "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
   "title": "¡Nueva versión disponible!",
   "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
   "notesTitle": "Novedades",
