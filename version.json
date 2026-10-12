@@ -1,9 +1,14 @@
 {
-  "version": "1.2.1",
+  "version": "1.3.0",
   "mandatory": false,
   "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk",
   "title": "¡Nueva versión disponible!",
   "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
   "notesTitle": "Novedades",
-  "notes": ["LeeyerIA: tu asistente de Derecho colombiano", "Nueva pantalla de Configuración", "Notificaciones y recordatorios de estudio", "Verificación en dos pasos", "Avisos push aunque la app esté cerrada"]
+  "notes": [
+    "Mis notas rediseñadas: materias, favoritas, importantes y buscador",
+    "Foro compartido: lo que publica un estudiante lo ven todos",
+    "Estadísticas en tiempo real con actividad reciente",
+    "LeeyerIA, recordatorios y avisos push"
+  ]
 }
