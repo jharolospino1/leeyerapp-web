@@ -1,14 +1,14 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "mandatory": false,
   "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
   "title": "¡Nueva versión disponible!",
   "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
   "notesTitle": "Novedades",
   "notes": [
-    "Mis notas rediseñadas: materias, favoritas, importantes y buscador",
-    "Foro compartido: lo que publica un estudiante lo ven todos",
-    "Estadísticas en tiempo real con actividad reciente",
-    "LeeyerIA, recordatorios y avisos push"
+    "Buscar rediseñado: filtros, categorías, búsquedas recientes y sugerencias",
+    "Resultados recientes de lo que abres",
+    "El teclado ya no tapa lo que escribes",
+    "Mis notas, foro compartido y estadísticas en tiempo real"
   ]
 }
