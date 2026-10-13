@@ -1,13 +1,13 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "mandatory": false,
   "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
   "title": "¡Nueva versión disponible!",
   "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
   "notesTitle": "Novedades",
   "notes": [
-    "Buscar rediseñado: filtros, categorías, búsquedas recientes y sugerencias",
-    "Resultados recientes de lo que abres",
+    "Panel de administrador renovado: resumen, acciones rápidas y favoritos",
+    "Buscar rediseñado con filtros y búsquedas recientes",
     "El teclado ya no tapa lo que escribes",
     "Mis notas, foro compartido y estadísticas en tiempo real"
   ]
