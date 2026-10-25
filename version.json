@@ -1,21 +1,27 @@
 {
-  "version": "3.0.0",
+  "version": "3.1.1",
   "mandatory": false,
   "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
   "title": "¡Nueva versión disponible!",
-  "message": "Actualiza LeeyerApp para tener las últimas mejoras.",
-  "notesTitle": "Novedades",
+  "message": "Esta versión trae el nuevo inicio de sesión con huella digital, Leeyer Pro renovado y mejoras de seguridad y navegación. Actualiza para disfrutarlo todo.",
+  "notesTitle": "¿Qué hay de nuevo en la 3.1.1?",
   "notes": [
-    "Nuevo diseño de Editar perfil.",
-    "Ahora puedes subir tu foto de perfil.",
-    "LeeyerApp disponible en inglés (Configuración → Idioma)."
+    "Nuevo inicio de sesión: entra con tu huella digital, con Google, con Apple o con tu teléfono.",
+    "Por seguridad, si pasas más de 5 minutos fuera de la app te pedirá volver a entrar; con la huella es un toque.",
+    "Leeyer Pro: simulacros, diagnóstico, plan de estudio, LeeyerIA, biblioteca y estadísticas según tu plan.",
+    "Pagos de tu plan con Wompi; mientras esté vigente verás la corona y «Leeyer Pro» en el encabezado.",
+    "Nueva barra inferior: Inicio, Materias, LeeyerIA, Favoritos y Perfil.",
+    "El botón atrás del celular ahora retrocede dentro de la app, y activar planes desde administración quedó corregido."
   ],
   "title_en": "New version available!",
-  "message_en": "Update LeeyerApp to get the latest improvements.",
-  "notesTitle_en": "What's new",
+  "message_en": "This version brings the new fingerprint sign-in, a refreshed Leeyer Pro and security and navigation improvements. Update to enjoy it all.",
+  "notesTitle_en": "What's new in 3.1.1?",
   "notes_en": [
-    "New Edit profile design.",
-    "You can now upload your profile photo.",
-    "LeeyerApp is available in English (Settings → Language)."
+    "New sign-in: use your fingerprint, Google, Apple or your phone number.",
+    "For security, if you stay away from the app for more than 5 minutes it asks you to sign in again; with your fingerprint it's one touch.",
+    "Leeyer Pro: exams, diagnostic, study plan, LeeyerIA, library and statistics according to your plan.",
+    "Plan payments with Wompi; while active you'll see the crown and \"Leeyer Pro\" in the header.",
+    "New bottom bar: Home, Subjects, LeeyerIA, Favorites and Profile.",
+    "The phone's back button now goes back inside the app, and activating plans from admin is fixed."
   ]
 }
