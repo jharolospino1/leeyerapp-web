@@ -1,27 +1,27 @@
 {
-  "version": "3.1.2",
+  "version": "3.1.3",
   "mandatory": false,
-  "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk",
+  "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
   "title": "¡Nueva versión disponible!",
-  "message": "Esta versión activa la huella digital real del teléfono, mejora el inicio de sesión y corrige detalles de teclado y navegación. Actualiza para disfrutarla.",
-  "notesTitle": "¿Qué hay de nuevo en la 3.1.2?",
+  "message": "Esta versión corrige el botón atrás del celular para que ya no te saque de la app, activa la huella digital real del teléfono y mejora el inicio de sesión.",
+  "notesTitle": "¿Qué hay de nuevo en la 3.1.3?",
   "notes": [
-    "Huella digital: ahora usa el lector nativo del teléfono para entrar con un toque.",
+    "El botón atrás del celular retrocede dentro de la app y ya no te saca de ella.",
+    "Huella digital: usa el lector nativo del teléfono para entrar con un toque.",
     "Inicio de sesión con huella, Google, Apple o teléfono, con avisos claros si algo aún no está activado.",
     "Por seguridad, si pasas más de 5 minutos fuera de la app te pide volver a entrar.",
-    "El teclado ya no tapa la hoja para escribir tu número de teléfono.",
-    "Al abrir la app siempre aparece el nuevo inicio de sesión, sin pantallas antiguas.",
-    "Leeyer Pro, pagos con Wompi y botón atrás del celular que retrocede dentro de la app."
+    "El aviso de actualización te lleva a la página de descarga, como antes.",
+    "El teclado ya no tapa la hoja para escribir tu número de teléfono."
   ],
   "title_en": "New version available!",
-  "message_en": "This version enables the phone's real fingerprint reader, improves sign-in and fixes keyboard and navigation details. Update to enjoy it.",
-  "notesTitle_en": "What's new in 3.1.2?",
+  "message_en": "This version fixes the phone's back button so it no longer closes the app, enables the phone's real fingerprint reader and improves sign-in.",
+  "notesTitle_en": "What's new in 3.1.3?",
   "notes_en": [
-    "Fingerprint: now uses the phone's native reader to sign in with one touch.",
+    "The phone's back button now goes back inside the app and no longer closes it.",
+    "Fingerprint: uses the phone's native reader to sign in with one touch.",
     "Sign in with fingerprint, Google, Apple or phone, with clear messages if something isn't enabled yet.",
     "For security, if you stay away for more than 5 minutes the app asks you to sign in again.",
-    "The keyboard no longer covers the sheet where you type your phone number.",
-    "Opening the app always shows the new sign-in, with no old screens.",
-    "Leeyer Pro, Wompi payments and a back button that goes back inside the app."
+    "The update notice takes you to the download page, as before.",
+    "The keyboard no longer covers the sheet where you type your phone number."
   ]
 }
