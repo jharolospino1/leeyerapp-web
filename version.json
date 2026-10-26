@@ -1,27 +1,27 @@
 {
-  "version": "3.1.1",
+  "version": "3.1.2",
   "mandatory": false,
-  "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
+  "downloadUrl": "https://github.com/jharolospino1/leeyerapp/releases/latest/download/LeeyerApp.apk",
   "title": "¡Nueva versión disponible!",
-  "message": "Esta versión trae el nuevo inicio de sesión con huella digital, Leeyer Pro renovado y mejoras de seguridad y navegación. Actualiza para disfrutarlo todo.",
-  "notesTitle": "¿Qué hay de nuevo en la 3.1.1?",
+  "message": "Esta versión activa la huella digital real del teléfono, mejora el inicio de sesión y corrige detalles de teclado y navegación. Actualiza para disfrutarla.",
+  "notesTitle": "¿Qué hay de nuevo en la 3.1.2?",
   "notes": [
-    "Nuevo inicio de sesión: entra con tu huella digital, con Google, con Apple o con tu teléfono.",
-    "Por seguridad, si pasas más de 5 minutos fuera de la app te pedirá volver a entrar; con la huella es un toque.",
-    "Leeyer Pro: simulacros, diagnóstico, plan de estudio, LeeyerIA, biblioteca y estadísticas según tu plan.",
-    "Pagos de tu plan con Wompi; mientras esté vigente verás la corona y «Leeyer Pro» en el encabezado.",
-    "Nueva barra inferior: Inicio, Materias, LeeyerIA, Favoritos y Perfil.",
-    "El botón atrás del celular ahora retrocede dentro de la app, y activar planes desde administración quedó corregido."
+    "Huella digital: ahora usa el lector nativo del teléfono para entrar con un toque.",
+    "Inicio de sesión con huella, Google, Apple o teléfono, con avisos claros si algo aún no está activado.",
+    "Por seguridad, si pasas más de 5 minutos fuera de la app te pide volver a entrar.",
+    "El teclado ya no tapa la hoja para escribir tu número de teléfono.",
+    "Al abrir la app siempre aparece el nuevo inicio de sesión, sin pantallas antiguas.",
+    "Leeyer Pro, pagos con Wompi y botón atrás del celular que retrocede dentro de la app."
   ],
   "title_en": "New version available!",
-  "message_en": "This version brings the new fingerprint sign-in, a refreshed Leeyer Pro and security and navigation improvements. Update to enjoy it all.",
-  "notesTitle_en": "What's new in 3.1.1?",
+  "message_en": "This version enables the phone's real fingerprint reader, improves sign-in and fixes keyboard and navigation details. Update to enjoy it.",
+  "notesTitle_en": "What's new in 3.1.2?",
   "notes_en": [
-    "New sign-in: use your fingerprint, Google, Apple or your phone number.",
-    "For security, if you stay away from the app for more than 5 minutes it asks you to sign in again; with your fingerprint it's one touch.",
-    "Leeyer Pro: exams, diagnostic, study plan, LeeyerIA, library and statistics according to your plan.",
-    "Plan payments with Wompi; while active you'll see the crown and \"Leeyer Pro\" in the header.",
-    "New bottom bar: Home, Subjects, LeeyerIA, Favorites and Profile.",
-    "The phone's back button now goes back inside the app, and activating plans from admin is fixed."
+    "Fingerprint: now uses the phone's native reader to sign in with one touch.",
+    "Sign in with fingerprint, Google, Apple or phone, with clear messages if something isn't enabled yet.",
+    "For security, if you stay away for more than 5 minutes the app asks you to sign in again.",
+    "The keyboard no longer covers the sheet where you type your phone number.",
+    "Opening the app always shows the new sign-in, with no old screens.",
+    "Leeyer Pro, Wompi payments and a back button that goes back inside the app."
   ]
 }
