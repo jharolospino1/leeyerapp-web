@@ -1,27 +1,84 @@
 {
-  "version": "3.1.3",
+  "version": "5.1.0",
+  "releaseDate": "2026-10-29",
   "mandatory": false,
   "downloadUrl": "https://jharolospino1.github.io/leeyerapp-web/",
-  "title": "¡Nueva versión disponible!",
-  "message": "Esta versión corrige el botón atrás del celular para que ya no te saque de la app, activa la huella digital real del teléfono y mejora el inicio de sesión.",
-  "notesTitle": "¿Qué hay de nuevo en la 3.1.3?",
+  "title": "Actualización 5.1.0 disponible",
+  "message": "Leeyer Pro llega renovado: nuevo diseño premium en simulacros, seguimiento, plan de estudio, diagnóstico y LeeyerIA Tutor. Actualiza para verlo.",
+  "notesTitle": "Novedades de la versión 5.1.0",
   "notes": [
-    "El botón atrás del celular retrocede dentro de la app y ya no te saca de ella.",
-    "Huella digital: usa el lector nativo del teléfono para entrar con un toque.",
-    "Inicio de sesión con huella, Google, Apple o teléfono, con avisos claros si algo aún no está activado.",
-    "Por seguridad, si pasas más de 5 minutos fuera de la app te pide volver a entrar.",
-    "El aviso de actualización te lleva a la página de descarga, como antes.",
-    "El teclado ya no tapa la hoja para escribir tu número de teléfono."
+    "Leeyer Pro renovado: inicio, simulacros con carrusel de 5 modalidades, preguntas y resultados con el nuevo estilo premium.",
+    "Seguimiento y Plan de estudio nuevos: aciertos, racha, desempeño por áreas, calendario y progreso con tus datos reales.",
+    "LeeyerIA Tutor renovado: pantalla con preguntas populares y chat con respuestas, base legal, escuchar y copiar.",
+    "Mi diagnóstico mejorado: nivel, resumen general, tiempos, áreas dominadas y por reforzar, y análisis completo.",
+    "Todo con tus datos reales, sin datos de demostración, y ajustado a pantallas de 360 a 412 px en modo claro y oscuro.",
+    "Se corrigió el conteo de preguntas disponibles que aparecía en cero."
   ],
-  "title_en": "New version available!",
-  "message_en": "This version fixes the phone's back button so it no longer closes the app, enables the phone's real fingerprint reader and improves sign-in.",
-  "notesTitle_en": "What's new in 3.1.3?",
+  "title_en": "Update 5.1.0 available",
+  "message_en": "Leeyer Pro is renewed: a new premium design across simulations, progress tracking, study plan, diagnostic and LeeyerIA Tutor. Update to see it.",
+  "notesTitle_en": "What's new in version 5.1.0",
   "notes_en": [
-    "The phone's back button now goes back inside the app and no longer closes it.",
-    "Fingerprint: uses the phone's native reader to sign in with one touch.",
-    "Sign in with fingerprint, Google, Apple or phone, with clear messages if something isn't enabled yet.",
-    "For security, if you stay away for more than 5 minutes the app asks you to sign in again.",
-    "The update notice takes you to the download page, as before.",
-    "The keyboard no longer covers the sheet where you type your phone number."
+    "Leeyer Pro renewed: home, simulations with a 5-mode carousel, questions and results in the new premium style.",
+    "New Progress and Study plan screens: accuracy, streak, performance by area, calendar and progress with your real data.",
+    "LeeyerIA Tutor renewed: popular questions screen and a chat with answers, legal basis, listen and copy.",
+    "Improved My diagnostic: level, overall summary, times, mastered and to-reinforce areas, and full analysis.",
+    "Everything uses your real data, no demo data, and fits 360 to 412 px screens in light and dark mode.",
+    "Fixed the available-questions count that showed as zero."
+  ],
+  "changelog": [
+    {
+      "area": "Leeyer Pro · Inicio",
+      "items": [
+        "Banner de suscripción con ilustración, «Sigue practicando», Herramientas en 2 columnas con etiqueta PRO y Accesos rápidos.",
+        "Sin la sección «Por áreas» ni materias, según el diseño de referencia."
+      ]
+    },
+    {
+      "area": "Simulacros",
+      "items": [
+        "Encabezado compacto, banner de preparación para el examen de idoneidad y pestañas Disponibles / En progreso / Resultados.",
+        "Tarjeta de estadísticas y carrusel de 5 tarjetas: Simulacro general, Simulacro por competencias, Diagnóstico inicial, Reto contrarreloj (10 o 15 preguntas) y Repaso inteligente.",
+        "Áreas en 2 columnas y accesos rápidos.",
+        "Conteo de preguntas disponibles corregido."
+      ]
+    },
+    {
+      "area": "Preguntas y resultado",
+      "items": [
+        "Pantalla de preguntas del simulacro rehecha idéntica a la referencia, con mapa de preguntas, marcar para revisar y salida segura.",
+        "Pantalla de resultado y diagnóstico final rehecha, con aro de aciertos, resumen y resultado por área."
+      ]
+    },
+    {
+      "area": "Seguimiento y Plan de estudio",
+      "items": [
+        "Seguimiento: aciertos, intentos, preguntas resueltas, tiempo de estudio, racha, desempeño por áreas, últimos resultados y filtro de periodo.",
+        "Plan de estudio: progreso, tareas por semana, calendario, historial, plan completo y edición del plan, con fechas y estados reales."
+      ]
+    },
+    {
+      "area": "LeeyerIA Tutor",
+      "items": [
+        "Pantalla principal: tarjeta con la estatua, ventajas, cuadro para preguntar con micrófono, atajos, Preguntas populares y «¿Sabías que…?».",
+        "Pantalla de mensajes: presentación del tutor, preguntas sugeridas, barra de escribir con voz, respuestas con base legal, Escuchar, Copiar, contador diario y Reintentar.",
+        "«Explícame esta pregunta» desde los simulacros abre directamente el chat del tutor."
+      ]
+    },
+    {
+      "area": "Mi diagnóstico",
+      "items": [
+        "Aro de aciertos con nivel, resumen general (correctas, incorrectas, en blanco), tiempo total, tiempo por pregunta y rendimiento global.",
+        "Áreas dominadas y por reforzar, resultado por área con filtros y análisis completo con competencias, temas y recomendaciones.",
+        "Estados de sin sesión, plan sin acceso y sin diagnóstico conservados."
+      ]
+    },
+    {
+      "area": "General",
+      "items": [
+        "Datos reales en todas las pantallas, sin datos de demostración.",
+        "Adaptado a pantallas de 360 a 412 px, en modo claro y oscuro.",
+        "Se conservan todas las funciones y rutas existentes de la app."
+      ]
+    }
   ]
 }
